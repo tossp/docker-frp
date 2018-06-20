@@ -1,10 +1,10 @@
 FROM golang:alpine
 
-LABEL version="0.16.1" \
+LABEL version="0.20.0" \
       description="A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet." \
       maintainer="docker@tossp.com"
 
-ENV FRP_VERSION=0.16.1
+ENV FRP_VERSION=0.20.0
 
 RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_amd64.tar.gz && \ 
     tar zxvf frp_${FRP_VERSION}_linux_amd64.tar.gz && \
